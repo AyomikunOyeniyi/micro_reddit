@@ -3,4 +3,5 @@ class User < ApplicationRecord
   validates :email,  presence: true, format: { with: /\A\S+@\S+\Z/, message: "must be valid email address" }
 
   has_many :posts
+  has_many :comments
 end
